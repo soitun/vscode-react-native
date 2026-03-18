@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "發行到 Expo",
 	"reactNative.command.showDevMenu.title": "顯示開發人員功能表",
 	"reactNative.command.reloadApp.title": "重新載入應用程式",
-	"reactNative.command.runInspector.title": "執行元素偵測器",
+
 	"reactNative.snippets.debugAndroid.description": "在 Android 上啟動 react-native 應用程式的新組態",
 	"reactNative.snippets.debugiOS.description": "在 iOS 上啟動 react-native 應用程式的新組態",
 	"reactNative.snippets.attachPackager.description": "連結到封裝工具的新組態",

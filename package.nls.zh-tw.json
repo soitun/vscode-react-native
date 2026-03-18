@@ -25,8 +25,6 @@
 	"reactNative.command.installExpoGoApplication.title": "在模擬器或裝置上下載並安裝 Expo Go",
 	"reactNative.command.showDevMenu.title": "顯示開發選單",
 	"reactNative.command.reloadApp.title": "重新載入應用程式",
-	"reactNative.command.runInspector.title": "運行元素檢查器",
-	"reactNative.command.stopInspector.title": "停止元素檢查器",
 	"reactNative.command.startLogCatMonitor.title": "運行 React Native LogCat 監視器",
 	"reactNative.command.stopLogCatMonitor.title": "停止 React Native LogCat 監視器",
 	"reactNative.command.startNetworkInspector.title": "運行網路檢查器",

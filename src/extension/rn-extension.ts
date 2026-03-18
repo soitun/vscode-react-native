@@ -46,7 +46,7 @@ import { ExtensionConfigManager } from "./extensionConfigManager";
 import { TipNotificationService } from "./services/tipsNotificationsService/tipsNotificationService";
 import { SurveyService } from "./services/surveyService/surveyService";
 import { RNProjectObserver } from "./rnProjectObserver";
-import { StopElementInspector, StopPackager } from "./commands";
+import { StopPackager } from "./commands";
 
 nls.config({
     messageFormat: nls.MessageFormat.bundle,
@@ -237,7 +237,6 @@ export function deactivate(): Promise<void> {
                         StopPackager.formInstance().executeLocally(it),
                     ),
                 );
-                await StopElementInspector.formInstance().executeLocally();
                 LogCatMonitorManager.cleanUp();
                 resolve();
             },

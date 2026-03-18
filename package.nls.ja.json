@@ -25,8 +25,6 @@
 	"reactNative.command.installExpoGoApplication.title": "Expo Go をシミュレーターまたはデバイスにダウンロードしてインストールします",
 	"reactNative.command.showDevMenu.title": "開発メニューを表示",
 	"reactNative.command.reloadApp.title": "アプリをリロードする",
-	"reactNative.command.runInspector.title": "要素インスペクターを実行する",
-	"reactNative.command.stopInspector.title": "要素インスペクターの停止",
 	"reactNative.command.startLogCatMonitor.title": "React Native LogCat モニターを実行する",
 	"reactNative.command.stopLogCatMonitor.title": "React Native LogCat モニターを停止する",
 	"reactNative.command.startNetworkInspector.title": "ネットワークインスペクターを実行する",

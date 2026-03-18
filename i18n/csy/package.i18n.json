@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "Publikovat do Expo",
 	"reactNative.command.showDevMenu.title": "Zobrazit nabídku pro vývojáře",
 	"reactNative.command.reloadApp.title": "Znovu načíst aplikaci",
-	"reactNative.command.runInspector.title": "Spustit inspektor elementů",
+
 	"reactNative.snippets.debugAndroid.description": "Nová konfigurace pro spuštění aplikace react-native v Androidu",
 	"reactNative.snippets.debugiOS.description": "Nová konfigurace pro spuštění aplikace react-native v iOSu",
 	"reactNative.snippets.attachPackager.description": "Nová konfigurace pro připojení k balíčkovači",

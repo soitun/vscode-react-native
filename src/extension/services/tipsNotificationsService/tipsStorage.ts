@@ -10,13 +10,6 @@ const localize = nls.loadMessageBundle();
 
 export default {
     generalTips: {
-        elementInspector: {
-            text: localize(
-                "TipElementInspector",
-                'You can run React DevTools Element inspector to inspect your application\'s UI elements by starting "Run Element Inspector" command in Command Palette. Note, "react-devtools" package should be installed globally',
-            ),
-            anchorLink: "#react-native-commands-in-the-command-palette",
-        },
         logCatMonitor: {
             text: localize(
                 "TipLogCatMonitor",
