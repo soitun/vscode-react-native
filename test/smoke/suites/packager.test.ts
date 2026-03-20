@@ -44,10 +44,18 @@ export function startPackagerTests(): void {
             SmokeTestLogger.testLog("Packager is ready.");
 
             await packager.click();
-            await ComponentHelper.waitPackagerStateIncludes("loading~spin");
+            // Use waitPackagerStateIncludesOneOf to handle the race condition where
+            // "loading~spin" may transition to "primitive-square" faster than the polling interval (1s).
+            await ComponentHelper.waitPackagerStateIncludesOneOf(
+                ["loading~spin", "primitive-square"],
+                TimeoutConstants.PACKAGER_STATE_TIMEOUT,
+            );
             SmokeTestLogger.testLog("Packager is starting.");
 
-            await ComponentHelper.waitPackagerStateIncludes("primitive-square");
+            await ComponentHelper.waitPackagerStateIncludes(
+                "primitive-square",
+                TimeoutConstants.PACKAGER_STATE_TIMEOUT,
+            );
             SmokeTestLogger.testLog("Packager is started.");
 
             await packager.click();
