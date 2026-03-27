@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "Expo에 게시",
 	"reactNative.command.showDevMenu.title": "개발자 메뉴 표시",
 	"reactNative.command.reloadApp.title": "앱 다시 로드",
-	"reactNative.command.runInspector.title": "요소 검사기 실행",
+
 	"reactNative.snippets.debugAndroid.description": "Android에서 react-native 앱을 시작하기 위한 새 구성",
 	"reactNative.snippets.debugiOS.description": "iOS에서 react-native 앱을 시작하기 위한 새 구성",
 	"reactNative.snippets.attachPackager.description": "패키지 작성 도구에 연결하기 위한 새 구성",

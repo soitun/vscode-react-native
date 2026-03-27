@@ -25,8 +25,6 @@
 	"reactNative.command.installExpoGoApplication.title": "Scarica e installa Expo Go sul simulatore o sul dispositivo",
 	"reactNative.command.showDevMenu.title": "Mostra menu sviluppatore",
 	"reactNative.command.reloadApp.title": "Ricarica l'app",
-	"reactNative.command.runInspector.title": "Esegui Ispezione elementi",
-	"reactNative.command.stopInspector.title": "Arresta Ispettore Elemento",
 	"reactNative.command.startLogCatMonitor.title": "Esegui React Native LogCat Monitor",
 	"reactNative.command.stopLogCatMonitor.title": "Arresta React Native LogCat Monitor",
 	"reactNative.command.startNetworkInspector.title": "Esegui Ispezione rete",

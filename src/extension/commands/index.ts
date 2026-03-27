@@ -3,7 +3,6 @@
 export * from "./rnDoctor";
 export * from "./expoDoctor";
 export * from "./debugScenario";
-export * from "./elementInspector";
 export * from "./launchAndroidEmulator";
 export * from "./launchIosSimulator";
 export * from "./launchExpoWeb";

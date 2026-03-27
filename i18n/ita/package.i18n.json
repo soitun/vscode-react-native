@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "Pubblica in Expo",
 	"reactNative.command.showDevMenu.title": "Mostra menu Sviluppatore",
 	"reactNative.command.reloadApp.title": "Ricarica app",
-	"reactNative.command.runInspector.title": "Esegui controllo elementi",
+
 	"reactNative.snippets.debugAndroid.description": "Nuova configurazione per l'avvio dell'app react-native in Android",
 	"reactNative.snippets.debugiOS.description": "Nuova configurazione per l'avvio dell'app react-native in iOS",
 	"reactNative.snippets.attachPackager.description": "Nuova configurazione per il collegamento dello strumento per la creazione di pacchetti",
