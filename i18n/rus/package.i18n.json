@@ -17,7 +17,6 @@
 	"reactNative.command.publishToExpHost.title": "Публикация в Expo",
 	"reactNative.command.showDevMenu.title": "Показать меню разработки",
 	"reactNative.command.reloadApp.title": "Перезагрузить приложение",
-	"reactNative.command.runInspector.title": "Запустить инспектор элементов",
 	"reactNative.snippets.debugAndroid.description": "Новая конфигурация для запуска приложения react-native на Android",
 	"reactNative.snippets.debugiOS.description": "Новая конфигурация для запуска приложения react-native на iOS",
 	"reactNative.snippets.attachPackager.description": "Новая конфигурация для подключения к упаковщику",

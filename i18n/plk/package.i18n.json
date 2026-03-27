@@ -17,7 +17,6 @@
 	"reactNative.command.publishToExpHost.title": "Publikuj w środowisku Expo",
 	"reactNative.command.showDevMenu.title": "Pokaż menu dewelopera",
 	"reactNative.command.reloadApp.title": "Załaduj ponownie aplikację",
-	"reactNative.command.runInspector.title": "Uruchom inspektora elementów",
 	"reactNative.snippets.debugAndroid.description": "Nowa konfiguracja na potrzeby uruchamiania aplikacji platformy React Native w systemie Android",
 	"reactNative.snippets.debugiOS.description": "Nowa konfiguracja na potrzeby uruchamiania aplikacji platformy React Native w systemie iOS",
 	"reactNative.snippets.attachPackager.description": "Nowa konfiguracja na potrzeby dołączania do narzędzia do tworzenia pakietów",

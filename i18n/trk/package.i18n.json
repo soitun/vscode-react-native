@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "Expo'ya yayımla",
 	"reactNative.command.showDevMenu.title": "Geliştirici Menüsünü Göster",
 	"reactNative.command.reloadApp.title": "Uygulamayı Yeniden Yükle",
-	"reactNative.command.runInspector.title": "Öğe Denetçisini Çalıştır",
+
 	"reactNative.snippets.debugAndroid.description": "Android'de react-native uygulamasını başlatmak için yeni bir yapılandırma",
 	"reactNative.snippets.debugiOS.description": "iOS'ta react-native uygulamasını başlatmak için yeni bir yapılandırma",
 	"reactNative.snippets.attachPackager.description": "Paketleyiciye eklemek için yeni bir yapılandırma",

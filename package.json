@@ -250,17 +250,6 @@
         "category": "React Native"
       },
       {
-        "command": "reactNative.runInspector",
-        "title": "%reactNative.command.runInspector.title%",
-        "category": "React Native"
-      },
-      {
-        "command": "reactNative.stopInspector",
-        "title": "%reactNative.command.stopInspector.title%",
-        "category": "React Native",
-        "enablement": "false"
-      },
-      {
         "command": "reactNative.startLogCatMonitor",
         "title": "%reactNative.command.startLogCatMonitor.title%",
         "category": "React Native"
