@@ -17,7 +17,7 @@
 	"reactNative.command.publishToExpHost.title": "Expo に公開",
 	"reactNative.command.showDevMenu.title": "Dev メニューの表示",
 	"reactNative.command.reloadApp.title": "アプリの再読み込み",
-	"reactNative.command.runInspector.title": "要素インスペクターの実行",
+
 	"reactNative.snippets.debugAndroid.description": "Android 上で react-native アプリを起動するための新しい構成",
 	"reactNative.snippets.debugiOS.description": "iOS 上で react-native アプリを起動するための新しい構成",
 	"reactNative.snippets.attachPackager.description": "パッケージャーにアタッチするための新しい構成",

@@ -58,7 +58,7 @@
 ## 1.13.0
 * Support react-native and expo doctor in command palette [#2116](https://github.com/microsoft/vscode-react-native/pull/2116)
 * Skip extra commas for getting workspace settings [#2113](https://github.com/microsoft/vscode-react-native/pull/2113)
-* Support .cjs metro config file [#2103](hhttps://github.com/microsoft/vscode-react-native/pull/2103)
+* Support .cjs metro config file [#2103](https://github.com/microsoft/vscode-react-native/pull/2103)
 * Remove all Experimental tags for Hermes debugging [#2094](https://github.com/microsoft/vscode-react-native/issues/2094)
 * Support default breakpoints filters for exceptions [#2097](https://github.com/microsoft/vscode-react-native/pull/2097)
 * Update package and software version for each doc [#2093](https://github.com/microsoft/vscode-react-native/pull/2093)

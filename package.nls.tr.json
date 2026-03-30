@@ -25,8 +25,6 @@
 	"reactNative.command.installExpoGoApplication.title": "Expo Go'yu simülatöre veya cihaza indirin ve yükleyin",
 	"reactNative.command.showDevMenu.title": "Geliştirici Menüsünü Göster",
 	"reactNative.command.reloadApp.title": "Uygulamayı Yeniden Yükle",
-	"reactNative.command.runInspector.title": "Element Inspector'ı Çalıştır",
-	"reactNative.command.stopInspector.title": "Eleman Denetçisini Durdur",
 	"reactNative.command.startLogCatMonitor.title": "React Native LogCat Monitörünü Çalıştırın",
 	"reactNative.command.stopLogCatMonitor.title": "React Native LogCat Monitörünü Durdurun",
 	"reactNative.command.startNetworkInspector.title": "Ağ Denetleyicisini Çalıştır",

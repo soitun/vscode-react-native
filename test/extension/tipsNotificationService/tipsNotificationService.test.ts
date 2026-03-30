@@ -322,10 +322,6 @@ suite("tipNotificationService", function () {
 
         const mockedTipsStorageBefore = {
             generalTips: {
-                elementInspector: {
-                    text: "Element Inspector Tip Text",
-                    anchorLink: "#react-native-commands-in-the-command-palette",
-                },
                 customEnvVariables: {
                     text: "Custom Env Variables Tip Text",
                     anchorLink: "#custom-environment-variables",
@@ -341,7 +337,6 @@ suite("tipNotificationService", function () {
 
         const expectedTipsConfigGeneralTipsBefore = {
             customEnvVariables: {},
-            elementInspector: {},
         };
 
         const expectedTipsConfigSpecificTipsBefore = {
@@ -364,12 +359,7 @@ suite("tipNotificationService", function () {
             )).parseDatesInRawConfig(config.get(tipsConfigName));
 
             const mockedTipsStorageAfter = {
-                generalTips: {
-                    elementInspector: {
-                        text: "Element Inspector Tip Text",
-                        anchorLink: "#react-native-commands-in-the-command-palette",
-                    },
-                },
+                generalTips: {},
                 specificTips: {
                     networkInspectorLogsColorTheme: {
                         text: "Network Inspector Logs Tip Text",
@@ -392,9 +382,7 @@ suite("tipNotificationService", function () {
                 mockedTipsNotificationServiceInstanceAfter
             )).parseDatesInRawConfig(config.get(tipsConfigName));
 
-            const expectedTipsConfigGeneralTipsAfter = {
-                elementInspector: {},
-            };
+            const expectedTipsConfigGeneralTipsAfter = {};
 
             const expectedTipsConfigSpecificTipsAfter = {
                 networkInspectorLogsColorTheme: {},
@@ -439,10 +427,6 @@ suite("tipNotificationService", function () {
 
             const mockedTipsStorageAfter = {
                 generalTips: {
-                    elementInspector: {
-                        text: "Element Inspector Tip Text",
-                        anchorLink: "#react-native-commands-in-the-command-palette",
-                    },
                     customEnvVariables: {
                         text: "Custom Env Variables Tip Text",
                         anchorLink: "#custom-environment-variables",
@@ -475,7 +459,6 @@ suite("tipNotificationService", function () {
             )).parseDatesInRawConfig(config.get(tipsConfigName));
 
             const expectedTipsConfigGeneralTipsAfter = {
-                elementInspector: {},
                 customEnvVariables: {},
                 networkInspector: {},
             };
@@ -522,10 +505,6 @@ suite("tipNotificationService", function () {
 
             const mockedTipsStorageAfter = {
                 generalTips: {
-                    elementInspector: {
-                        text: "Element Inspector Tip Text",
-                        anchorLink: "#react-native-commands-in-the-command-palette",
-                    },
                     networkInspector: {
                         text: "Network Inspector Tip Text",
                         anchorLink: "#network-inspector",
@@ -554,7 +533,6 @@ suite("tipNotificationService", function () {
             )).parseDatesInRawConfig(config.get(tipsConfigName));
 
             const expectedTipsConfigGeneralTipsAfter = {
-                elementInspector: {},
                 networkInspector: {},
             };
 

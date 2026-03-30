@@ -17,7 +17,6 @@
 	"reactNative.command.publishToExpHost.title": "发布到 Expo",
 	"reactNative.command.showDevMenu.title": "显示开发人员菜单",
 	"reactNative.command.reloadApp.title": "重新加载应用",
-	"reactNative.command.runInspector.title": "运行元素检查器",
 	"reactNative.snippets.debugAndroid.description": "用于在 Android 上启动 react-native 应用的新配置",
 	"reactNative.snippets.debugiOS.description": "用于在 iOS 上启动 react-native 应用的新配置",
 	"reactNative.snippets.attachPackager.description": "用于附加到包生成工具的新配置",
