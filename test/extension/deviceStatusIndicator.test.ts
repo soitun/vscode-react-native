@@ -41,19 +41,19 @@ suite("DeviceStatusIndicator", function () {
             createStatusBarItemStub.restore();
         });
         test("show should set correct icon and device name in text", function () {
-            DeviceStatusIndicator.show("iPhone 15");
-            assert.strictEqual(fakeItem.text, "$(device-mobile) iPhone 15");
+            DeviceStatusIndicator.show("Test Device");
+            assert.strictEqual(fakeItem.text, "$(device-mobile) Test Device");
         });
         test("show should set correct tooltip with device name", function () {
-            DeviceStatusIndicator.show("Pixel 7");
-            assert.strictEqual(fakeItem.tooltip, "Active debug target: Pixel 7");
+            DeviceStatusIndicator.show("Test Device");
+            assert.strictEqual(fakeItem.tooltip, "Active debug target: Test Device");
         });
         test("show should call show on the status bar item", function () {
-            DeviceStatusIndicator.show("iPhone 15");
+            DeviceStatusIndicator.show("Test Device");
             assert.ok((fakeItem.show as Sinon.SinonStub).calledOnce);
         });
         test("hide should call hide on the status bar item after show", function () {
-            DeviceStatusIndicator.show("iPhone 15");
+            DeviceStatusIndicator.show("Test Device");
             DeviceStatusIndicator.hide();
             assert.ok((fakeItem.hide as Sinon.SinonStub).calledOnce);
         });
@@ -61,13 +61,13 @@ suite("DeviceStatusIndicator", function () {
             assert.doesNotThrow(() => DeviceStatusIndicator.hide());
         });
         test("show should reuse singleton instance across multiple calls", function () {
-            DeviceStatusIndicator.show("iPhone 15");
-            DeviceStatusIndicator.show("Pixel 7");
+            DeviceStatusIndicator.show("Device A");
+            DeviceStatusIndicator.show("Device B");
             assert.strictEqual(createStatusBarItemStub.callCount, 1);
-            assert.strictEqual(fakeItem.text, "$(device-mobile) Pixel 7");
+            assert.strictEqual(fakeItem.text, "$(device-mobile) Device B");
         });
         test("dispose should clear the singleton instance", function () {
-            DeviceStatusIndicator.show("iPhone 15");
+            DeviceStatusIndicator.show("Test Device");
             const instance = (DeviceStatusIndicator as any).instance as DeviceStatusIndicator;
             instance.dispose();
             assert.strictEqual((DeviceStatusIndicator as any).instance, undefined);

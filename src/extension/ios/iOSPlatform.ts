@@ -224,6 +224,11 @@ export class IOSPlatform extends GeneralMobilePlatform {
                 () => Promise.resolve(IOSPlatform.RUN_IOS_FAILURE_PATTERNS),
                 PlatformType.iOS,
             ).process(runIosSpawn);
+
+            // Ensure target is set for status indicator
+            if (!this.target) {
+                await this.getTarget();
+            }
         });
     }
 
