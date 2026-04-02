@@ -225,9 +225,18 @@ export class IOSPlatform extends GeneralMobilePlatform {
                 PlatformType.iOS,
             ).process(runIosSpawn);
 
-            // Ensure target is set for status indicator
+            // Save target info for status indicator
             if (!this.target) {
-                await this.getTarget();
+                const target = await this.getTarget();
+                if (target && target.name) {
+                    this.target = new IOSTarget(
+                        target.isOnline,
+                        target.isVirtualTarget,
+                        target.id,
+                        target.name,
+                        target.system,
+                    );
+                }
             }
         });
     }
