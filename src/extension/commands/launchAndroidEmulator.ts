@@ -9,8 +9,7 @@ import { AndroidTargetManager } from "../android/androidTargetManager";
 import { TargetType } from "../generalPlatform";
 import { Command } from "./util/command";
 
-// #todo> codeName differs from Class Name
-export class LaunchAndroidEmulator extends Command {
+export class LaunchAndroidSimulator extends Command {
     codeName = "launchAndroidSimulator";
     label = "Launch Android Emulator";
     error = ErrorHelper.getInternalError(InternalErrorCode.FailedToStartAndroidEmulator);
