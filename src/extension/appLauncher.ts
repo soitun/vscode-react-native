@@ -304,7 +304,9 @@ export class AppLauncher {
                 try {
                     if (this.mobilePlatform instanceof GeneralMobilePlatform) {
                         generator.step("resolveMobileTarget");
-                        await this.resolveAndSaveMobileTarget(launchArgs, this.mobilePlatform);
+                        if (launchArgs.target) {
+                            await this.resolveAndSaveMobileTarget(launchArgs, this.mobilePlatform);
+                        }
                     }
 
                     await this.mobilePlatform.beforeStartPackager();
@@ -337,6 +339,14 @@ export class AppLauncher {
                     );
                     if (launchArgs.platform !== "exponent") {
                         await this.mobilePlatform.runApp();
+                    }
+
+                    // Show device name in status bar after app is launched
+                    if (this.mobilePlatform instanceof GeneralMobilePlatform) {
+                        const target = this.mobilePlatform.getResolvedTarget();
+                        if (target?.name) {
+                            DeviceStatusIndicator.show(target.name);
+                        }
                     }
 
                     if (mobilePlatformOptions.isDirect) {
@@ -597,11 +607,6 @@ export class AppLauncher {
                                 : resultTarget.id,
                     });
                 }
-            }
-
-            const target = mobilePlatform.getResolvedTarget();
-            if (target?.name) {
-                DeviceStatusIndicator.show(target.name);
             }
         }
     }

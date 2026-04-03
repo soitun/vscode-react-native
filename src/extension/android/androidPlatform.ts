@@ -208,6 +208,40 @@ export class AndroidPlatform extends GeneralMobilePlatform {
                     targetId = await this.getTargetIdForRunApp(onlineTargetsIds);
                     this.packageName = await this.getPackageName();
                     devicesIdsForLaunch = [targetId];
+
+                    // Save target info for status indicator
+                    if (targetId) {
+                        const onlineTargets = await this.adbHelper.getOnlineTargets();
+                        const targetInfo = onlineTargets.find(t => t.id === targetId);
+                        if (targetInfo) {
+                            let deviceName = targetId;
+                            try {
+                                // For emulators, try to get AVD name first
+                                if (targetInfo.isVirtualTarget) {
+                                    const avdName = await this.adbHelper.getAvdNameById(targetId);
+                                    if (avdName) {
+                                        deviceName = `${avdName} (${targetId})`;
+                                    }
+                                } else {
+                                    // For physical devices, get model name
+                                    const modelResult = await this.adbHelper.executeQuery(
+                                        targetId,
+                                        "shell getprop ro.product.model",
+                                    );
+                                    const model = modelResult.trim();
+                                    if (model) {
+                                        deviceName = `${model} (${targetId})`;
+                                    }
+                                }
+                            } catch (error) {}
+                            this.target = new AndroidTarget(
+                                targetInfo.isOnline,
+                                targetInfo.isVirtualTarget,
+                                targetInfo.id,
+                                deviceName,
+                            );
+                        }
+                    }
                 }
             } catch (error) {
                 if (!targetId) {
